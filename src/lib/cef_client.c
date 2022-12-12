@@ -402,7 +402,8 @@ cef_client_connect_to_csmgrd (
 
 	conn = (CefT_Connect*) malloc (sizeof (CefT_Connect));
 	memset (conn, 0, sizeof (CefT_Connect));
-	ioctl(sock, FIONBIO, 1);
+	val = 1
+	ioctl(sock, FIONBIO, &val);
 	conn->sock = sock;
 
 	return ((CefT_Client_Handle) conn);
