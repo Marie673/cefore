@@ -42,6 +42,7 @@
 #include <poll.h>
 #include <sys/time.h>
 #include <arpa/inet.h>
+#include <sys/ioctl.h>
 
 #include <cefore/cef_client.h>
 #include <cefore/cef_hash.h>
